@@ -74,6 +74,10 @@ Python · software architecture · APIs · automation · interfaces · reliabili
 </p>
 
 <p align="center">
+  <img src="assets/activity-console.svg" alt="Animated engineering activity console" width="100%" />
+</p>
+
+<p align="center">
   <img src="https://github-readme-activity-graph.vercel.app/graph?username=viditshah5656&bg_color=00000000&color=94a3b8&line=7dd3fc&point=f9a8d4&area=true&hide_border=true" width="100%" />
 </p>
 
@@ -119,7 +123,11 @@ The banner above is an **autoplaying SVG presentation** rather than a static cov
 
 `SYSTEM MINDSET` → `LOCAL AI` → `ROBOTICS LOOP` → `COMPUTER VISION` → `ENGINEERING EVIDENCE`
 
-The same visual surface can later be replaced with real screenshots, simulator frames, robot footage, architecture diagrams, or experiment results without changing the profile structure.
+The activity console below it also animates the engineering loop:
+
+`BUILD` → `VERIFY` → `PUBLISH`
+
+These visuals are intentionally generated as vectors so the repository stays lightweight. They can later be replaced with real screenshots, simulator frames, robot footage, architecture diagrams, and benchmark captures.
 
 ---
 
