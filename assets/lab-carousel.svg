@@ -1,0 +1,98 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="560" viewBox="0 0 1200 560" role="img" aria-labelledby="title desc">
+<title id="title">Vidit Shah — Engineering Lab</title>
+<desc id="desc">Animated engineering portfolio: AI, robotics, computer vision, automation and systems.</desc>
+<defs>
+  <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#071018"/><stop offset=".52" stop-color="#0d1220"/><stop offset="1" stop-color="#120b1f"/></linearGradient>
+  <linearGradient id="cyan" x1="0" x2="1"><stop stop-color="#7dd3fc"/><stop offset="1" stop-color="#22d3ee"/></linearGradient>
+  <linearGradient id="violet" x1="0" x2="1"><stop stop-color="#c4b5fd"/><stop offset="1" stop-color="#f472b6"/></linearGradient>
+  <linearGradient id="green" x1="0" x2="1"><stop stop-color="#bef264"/><stop offset="1" stop-color="#34d399"/></linearGradient>
+  <filter id="glow"><feGaussianBlur stdDeviation="7" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+  <pattern id="grid" width="32" height="32" patternUnits="userSpaceOnUse"><path d="M32 0H0V32" fill="none" stroke="#ffffff" stroke-opacity=".055"/></pattern>
+  <clipPath id="panel"><rect width="1200" height="560" rx="34"/></clipPath>
+  <style>
+    .scene{opacity:0;animation:show 24s infinite}.s1{animation-delay:0s}.s2{animation-delay:4.8s}.s3{animation-delay:9.6s}.s4{animation-delay:14.4s}.s5{animation-delay:19.2s}
+    @keyframes show{0%,4%{opacity:0;transform:translateY(12px)}8%,18%{opacity:1;transform:translateY(0)}22%,100%{opacity:0;transform:translateY(-8px)}}
+    .pulse{animation:pulse 2.2s ease-in-out infinite}.spin{transform-origin:600px 290px;animation:spin 16s linear infinite}.scan{animation:scan 3s ease-in-out infinite}
+    @keyframes pulse{50%{opacity:.35}}@keyframes spin{to{transform:rotate(360deg)}}@keyframes scan{0%,100%{transform:translateY(-18px);opacity:.15}50%{transform:translateY(18px);opacity:.85}}
+    text{font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}.mono{font-family:"SFMono-Regular",Consolas,monospace}
+  </style>
+</defs>
+<g clip-path="url(#panel)">
+<rect width="1200" height="560" fill="url(#bg)"/><rect width="1200" height="560" fill="url(#grid)"/>
+<circle cx="120" cy="80" r="230" fill="#22d3ee" opacity=".06"/><circle cx="1070" cy="430" r="260" fill="#c084fc" opacity=".07"/>
+<rect x="42" y="36" width="1116" height="488" rx="26" fill="#ffffff" fill-opacity=".035" stroke="#ffffff" stroke-opacity=".13"/>
+<text x="74" y="78" class="mono" font-size="12" letter-spacing="3" fill="#a5f3fc">VIDIT SHAH / ENGINEERING LAB</text>
+<text x="1126" y="78" class="mono" font-size="11" text-anchor="end" fill="#94a3b8">PUBLIC BUILD STREAM · 2026</text>
+
+<!-- scene 1 -->
+<g class="scene s1">
+  <text x="74" y="150" class="mono" font-size="12" fill="#7dd3fc">01 / SYSTEM MINDSET</text>
+  <text x="74" y="214" font-size="54" font-weight="700" fill="#f8fafc">I build systems,</text>
+  <text x="74" y="272" font-size="54" font-weight="700" fill="url(#cyan)">not screenshots.</text>
+  <text x="74" y="320" font-size="17" fill="#cbd5e1">Perception → reasoning → planning → control → interaction</text>
+  <g class="pulse">
+    <circle cx="922" cy="250" r="92" fill="none" stroke="#67e8f9" stroke-opacity=".25" stroke-width="2"/>
+    <circle cx="922" cy="250" r="58" fill="#67e8f9" fill-opacity=".10" stroke="#67e8f9" stroke-width="2"/>
+    <circle cx="922" cy="250" r="11" fill="#a5f3fc" filter="url(#glow)"/>
+    <path d="M922 192V172M922 328v20M864 250h-20M980 250h20" stroke="#a5f3fc" stroke-width="3"/>
+    <circle cx="861" cy="189" r="7" fill="#a78bfa"/><circle cx="983" cy="187" r="7" fill="#67e8f9"/><circle cx="860" cy="311" r="7" fill="#86efac"/><circle cx="984" cy="313" r="7" fill="#f9a8d4"/>
+    <path d="M861 189L904 235M983 187L940 236M860 311L904 265M984 313L940 264" stroke="#94a3b8" stroke-opacity=".45"/>
+  </g>
+  <text x="74" y="450" class="mono" font-size="11" fill="#64748b">AI · ROBOTICS · COMPUTER VISION · AUTOMATION · SOFTWARE</text>
+</g>
+
+<!-- scene 2 -->
+<g class="scene s2">
+  <text x="74" y="150" class="mono" font-size="12" fill="#c4b5fd">02 / LOCAL AI</text>
+  <text x="74" y="214" font-size="48" font-weight="700" fill="#f8fafc">A small model</text>
+  <text x="74" y="267" font-size="48" font-weight="700" fill="url(#violet)">inside the interface.</text>
+  <text x="74" y="315" font-size="16" fill="#cbd5e1">Browser-local inference · evidence-aware context · no chat backend</text>
+  <rect x="74" y="366" width="500" height="74" rx="16" fill="#ffffff" fill-opacity=".06" stroke="#ffffff" stroke-opacity=".10"/>
+  <circle cx="108" cy="403" r="10" fill="#86efac" filter="url(#glow)"/><text x="132" y="399" class="mono" font-size="11" fill="#e2e8f0">MODEL</text><text x="132" y="420" class="mono" font-size="11" fill="#c4b5fd">SmolLM2 · LOCAL / WEBGPU</text>
+  <g transform="translate(770 163)"><rect width="280" height="260" rx="22" fill="#05080f" fill-opacity=".65" stroke="#c4b5fd" stroke-opacity=".25"/><circle cx="140" cy="124" r="66" fill="#c4b5fd" fill-opacity=".06" stroke="#c4b5fd" stroke-width="2"/><path d="M92 126h96M140 78v96" stroke="#e9d5ff" stroke-opacity=".5"/><circle cx="140" cy="124" r="19" fill="#ddd6fe" fill-opacity=".45" filter="url(#glow)"/><path d="M44 211h192" stroke="#c4b5fd" stroke-opacity=".18"/><text x="140" y="236" text-anchor="middle" class="mono" font-size="10" fill="#a5b4fc">ASK → RETRIEVE → REASON → RESPOND</text></g>
+</g>
+
+<!-- scene 3 -->
+<g class="scene s3">
+  <text x="74" y="150" class="mono" font-size="12" fill="#86efac">03 / ROBOTICS LOOP</text>
+  <text x="74" y="214" font-size="48" font-weight="700" fill="#f8fafc">A portfolio that thinks</text>
+  <text x="74" y="267" font-size="48" font-weight="700" fill="url(#green)">in control loops.</text>
+  <g class="spin">
+    <circle cx="600" cy="290" r="134" fill="none" stroke="#86efac" stroke-opacity=".16" stroke-width="3"/>
+    <circle cx="600" cy="290" r="94" fill="none" stroke="#67e8f9" stroke-opacity=".18" stroke-width="2" stroke-dasharray="5 12"/>
+    <circle cx="600" cy="290" r="48" fill="#86efac" fill-opacity=".07" stroke="#86efac" stroke-width="2"/>
+    <circle cx="600" cy="156" r="13" fill="#86efac"/><circle cx="733" cy="290" r="13" fill="#67e8f9"/><circle cx="600" cy="424" r="13" fill="#c4b5fd"/><circle cx="467" cy="290" r="13" fill="#f9a8d4"/>
+    <path d="M600 156V242M733 290H648M600 424V338M467 290H552" stroke="#cbd5e1" stroke-opacity=".35" stroke-width="2"/>
+  </g>
+  <text x="74" y="330" font-size="16" fill="#cbd5e1">Observe the state. Compute the next action. Verify the result.</text>
+  <text x="74" y="430" class="mono" font-size="11" fill="#64748b">SENSING / LOCALIZATION / PLANNING / CONTROL / TELEMETRY</text>
+</g>
+
+<!-- scene 4 -->
+<g class="scene s4">
+  <text x="74" y="150" class="mono" font-size="12" fill="#f9a8d4">04 / COMPUTER VISION</text>
+  <text x="74" y="214" font-size="48" font-weight="700" fill="#f8fafc">See the pipeline,</text>
+  <text x="74" y="267" font-size="48" font-weight="700" fill="#f9a8d4">not just the output.</text>
+  <rect x="74" y="350" width="970" height="82" rx="20" fill="#ffffff" fill-opacity=".045" stroke="#ffffff" stroke-opacity=".10"/>
+  <text x="106" y="398" class="mono" font-size="11" fill="#e2e8f0">FRAME</text><text x="230" y="398" class="mono" font-size="11" fill="#f9a8d4">→ PREPROCESS</text><text x="414" y="398" class="mono" font-size="11" fill="#7dd3fc">→ INFER</text><text x="554" y="398" class="mono" font-size="11" fill="#c4b5fd">→ SCORE</text><text x="692" y="398" class="mono" font-size="11" fill="#86efac">→ DECIDE</text><text x="840" y="398" class="mono" font-size="11" fill="#fcd34d">→ ACT</text>
+  <g class="scan"><rect x="760" y="180" width="210" height="105" rx="18" fill="#f9a8d4" fill-opacity=".05" stroke="#f9a8d4" stroke-opacity=".20"/><path d="M786 238h158" stroke="#f9a8d4" stroke-width="2"/></g>
+</g>
+
+<!-- scene 5 -->
+<g class="scene s5">
+  <text x="74" y="150" class="mono" font-size="12" fill="#fcd34d">05 / ENGINEERING EVIDENCE</text>
+  <text x="74" y="214" font-size="48" font-weight="700" fill="#f8fafc">Every claim gets</text>
+  <text x="74" y="267" font-size="48" font-weight="700" fill="#fcd34d">an evidence path.</text>
+  <g transform="translate(80 335)">
+    <rect width="940" height="70" rx="16" fill="#ffffff" fill-opacity=".045" stroke="#ffffff" stroke-opacity=".1"/>
+    <circle cx="45" cy="35" r="15" fill="#fcd34d" fill-opacity=".25" stroke="#fcd34d"/><text x="77" y="30" class="mono" font-size="10" fill="#fcd34d">CLAIM</text><text x="77" y="47" font-size="12" fill="#cbd5e1">design decision</text>
+    <path d="M255 35H355" stroke="#64748b" stroke-width="2" marker-end="url(#arrow)"/><circle cx="395" cy="35" r="15" fill="#67e8f9" fill-opacity=".22" stroke="#67e8f9"/><text x="427" y="30" class="mono" font-size="10" fill="#67e8f9">SOURCE</text><text x="427" y="47" font-size="12" fill="#cbd5e1">implementation</text>
+    <path d="M625 35H725" stroke="#64748b" stroke-width="2"/><circle cx="765" cy="35" r="15" fill="#86efac" fill-opacity=".22" stroke="#86efac"/><text x="797" y="30" class="mono" font-size="10" fill="#86efac">PROVE</text><text x="797" y="47" font-size="12" fill="#cbd5e1">test / experiment</text>
+  </g>
+  <text x="74" y="463" class="mono" font-size="11" fill="#64748b">SOURCE → ARCHITECTURE → EXPERIMENT → VERIFICATION → REPRODUCTION</text>
+</g>
+
+<rect x="74" y="491" width="1052" height="1" fill="#ffffff" fill-opacity=".08"/>
+<text x="74" y="512" class="mono" font-size="10" fill="#64748b">AUTOPLAYING VISUAL / 5 SCENES / REDUCED-MOTION FRIENDLY AS STATIC POSTER</text>
+<circle cx="1102" cy="512" r="4" fill="#86efac" class="pulse"/>
+</g></svg>
