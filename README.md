@@ -91,7 +91,7 @@ The CLI can expose `STOP_LIMIT` while the order layer translates that name into 
 ## Public engineering index
 
 <!-- PUBLIC-INDEX:START -->
-**Public snapshot · 2026-09-15 11:44 UTC**
+**Public snapshot · 2026-09-15 11:47 UTC**
 
 1 original public project repositories · 0 public forks
 
