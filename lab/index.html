@@ -2,35 +2,106 @@
 <html lang="en">
 <head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Vidit Shah / Systems Lab</title>
-<meta name="description" content="Explore Vidit Shah's engineering lab. Trace a signed request, inject failures, and inspect the source behind the system.">
+<title>Vidit Shah / Engineering Lab</title>
+<meta name="description" content="Vidit Shah's interactive engineering lab — inspect systems, ask a local small language model about the work, and trace decisions to source.">
+<meta name="theme-color" content="#0a0c10">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<header><a class="wordmark" href="#">VS<span>/</span>LAB</a><nav aria-label="Main navigation"><a href="#workbench">Workbench</a><a href="#evidence">Evidence</a><a href="#decisions">Decisions</a><a href="https://github.com/rockstar5656">GitHub ↗</a></nav><span class="mode"><i></i> LOCAL SIMULATION</span></header>
-<main>
-<section class="hero"><div class="eyebrow">VIDIT SHAH · ENGINEERING SYSTEMS</div><h1>Open the system.<br><span>See what happens.</span></h1><div class="hero-bottom"><p>Python. Protocols. Failure modes.<br>An engineering lab you can actually inspect.</p><a class="text-link" href="#workbench">RUN AN EXPERIMENT <span>↓</span></a></div><div class="hero-ruler"><span>01 / INTERACTIVE SYSTEM</span><span>PUBLIC SOURCE · REPRODUCIBLE BEHAVIOR</span></div></section>
-<section id="workbench" class="workbench"><div class="section-intro"><div><div class="eyebrow">SYSTEM 001</div><h2>The request workbench</h2></div><p>Configure an order. Trace the protocol.<br>Inject a failure. Understand the boundary.</p></div>
-<div class="lab-grid"><form id="request-form" class="panel controls"><div class="panel-heading"><span>01 / INPUT</span><span class="chip">DEMO ONLY</span></div>
-<label>Symbol<input id="symbol" name="symbol" value="BTCUSDT" maxlength="20" autocomplete="off" spellcheck="false"></label>
-<div class="two-col"><label>Side<select id="side" name="side"><option>BUY</option><option>SELL</option></select></label><label>Order type<select id="order-type" name="type"><option>LIMIT</option><option>MARKET</option><option>STOP_LIMIT</option></select></label></div>
-<label>Quantity<input id="quantity" name="quantity" value="0.01" inputmode="decimal" autocomplete="off"></label>
-<div class="two-col"><label>Limit price<input id="price" name="price" value="65000" inputmode="decimal"></label><label>Stop price<input id="stop-price" name="stopPrice" placeholder="Required for STOP_LIMIT" inputmode="decimal"></label></div>
-<label>Time in force<select id="tif" name="tif"><option>GTC</option><option>IOC</option><option>FOK</option></select></label>
-<label>Inject an outcome<select id="scenario" name="scenario"><option value="accepted">Accepted response</option><option value="rejected">Exchange rejection</option><option value="timeout">Response lost / timeout</option></select></label>
-<button class="run" type="submit" id="run">TRACE REQUEST <span>↗</span></button>
-<div class="presets"><span>QUICK EXPERIMENTS</span><button type="button" data-preset="invalid">Invalid input</button><button type="button" data-preset="timeout">Lost response</button><button type="button" data-preset="stop">Stop-limit</button></div>
-<p class="fine">Runs entirely in your browser. Uses a public demonstration key. No account connection or orders.</p></form>
-<div class="panel trace-panel"><div class="panel-heading"><span>02 / EXECUTION TRACE</span><span id="trace-status" class="chip">READY</span></div><div class="pipeline" aria-label="Request pipeline"><div data-stage="validate"><b>01</b><span>Validate</span></div><div data-stage="translate"><b>02</b><span>Translate</span></div><div data-stage="sign"><b>03</b><span>Sign</span></div><div data-stage="resolve"><b>04</b><span>Resolve</span></div></div>
-<div id="output" role="status" aria-live="polite"><div class="empty"><span class="empty-code">await request.trace()</span><h3>Your experiment starts here.</h3><p>Try a valid request, then lose its response.<br>The same request can produce very different knowledge.</p></div></div>
-<div class="trace-footer"><span id="duration">CLIENT PROCESSING / NOT EXCHANGE LATENCY</span><button id="export" type="button" disabled>Export trace ↓</button></div></div></div>
-<div class="lab-note"><b>SIMULATION CONTRACT</b><p>This workbench is an educational JavaScript adaptation of a public Python project. Validation and translation illustrate its documented rules; server outcomes are explicitly simulated. Exchange symbol filters, balances, and live execution are outside this demo.</p></div></section>
-<section id="evidence"><div class="section-intro"><div><div class="eyebrow">FOLLOW THE EVIDENCE</div><h2>Every boundary has a source.</h2></div><p>Open a component.<br>Inspect the implementation it refers to.</p></div><div class="evidence-grid">
-<a class="evidence-card" href="https://github.com/rockstar5656/binance-futures-trading-bot/blob/d7656c42b14aaec7326cc19d8f3d5fa2280389f1/bot/validators.py"><span>01 / VALIDATION ↗</span><h3>Stop bad input early.</h3><p>Normalization, decimal inputs, and order-specific field requirements.</p><code>bot/validators.py</code></a>
-<a class="evidence-card" href="https://github.com/rockstar5656/binance-futures-trading-bot/blob/d7656c42b14aaec7326cc19d8f3d5fa2280389f1/bot/orders.py"><span>02 / TRANSLATION ↗</span><h3>Own the protocol boundary.</h3><p>Translate a user-facing STOP_LIMIT request into the exchange's STOP type.</p><code>bot/orders.py</code></a>
-<a class="evidence-card" href="https://github.com/rockstar5656/binance-futures-trading-bot/blob/d7656c42b14aaec7326cc19d8f3d5fa2280389f1/bot/client.py"><span>03 / TRANSPORT ↗</span><h3>Make the request explicit.</h3><p>HMAC signing, bounded HTTP timeouts, and exception translation.</p><code>bot/client.py</code></a>
-<a class="evidence-card" href="https://github.com/rockstar5656/binance-futures-trading-bot/tree/d7656c42b14aaec7326cc19d8f3d5fa2280389f1/tests"><span>04 / VERIFICATION ↗</span><h3>Challenge the behavior.</h3><p>Inspect mocked tests. Separate a local assertion from live integration evidence.</p><code>tests/</code></a></div><div class="revision">SOURCE SNAPSHOT <code>d7656c4</code><span>Links point to an immutable revision.</span></div></section>
-<section id="decisions"><div class="section-intro"><div><div class="eyebrow">THE ENGINEERING NOTEBOOK</div><h2>The interesting part is the tradeoff.</h2></div></div><details open><summary><span>DECISION 001</span>A timeout doesn't mean failure.<b>+</b></summary><div class="decision-body"><p>The server can accept a write before its response disappears. A transport exception tells us what the client observed; it does not prove what the server did.</p><p>The public order layer preserves this distinction by propagating network errors while turning explicit exchange rejections into structured results. Automatic reconciliation is a future extension, not a capability claimed here.</p><a href="https://github.com/rockstar5656/rockstar5656/blob/main/notebook/001-network-uncertainty.md">Read the source analysis ↗</a></div></details><details><summary><span>DECISION 002</span>Translate concepts at the edge.<b>+</b></summary><div class="decision-body"><p>The command-line interface can name an order STOP_LIMIT while the adapter emits STOP. An explicit mapping concentrates protocol maintenance and gives tests a small, inspectable target.</p><a href="https://github.com/rockstar5656/rockstar5656/blob/main/notebook/002-protocol-boundaries.md">Read the source analysis ↗</a></div></details><details><summary><span>EXPERIMENTS</span>Measurements need a method.<b>+</b></summary><div class="decision-body"><p>Export a trace to inspect this browser experiment. Its processing duration includes browser overhead and measures neither Python performance nor exchange latency. The simulated outcome is selected by you, not measured from a server.</p><a href="https://github.com/rockstar5656/rockstar5656/blob/main/notebook/experiment-template.md">Open the experiment template ↗</a></div></details></section>
-<section class="closing"><div class="eyebrow">VIDIT SHAH / OPEN ENGINEERING</div><h2>Don't stop at the interface.<br><span>Read the code.</span></h2><a href="https://github.com/rockstar5656/rockstar5656/tree/main/lab">EXPLORE THIS LAB'S SOURCE ↗</a></section>
-</main><footer><span>VS / LAB</span><span>Built for inspection. Maintained in Git.</span><a href="https://github.com/rockstar5656">@rockstar5656 ↗</a></footer><script type="module" src="app.js"></script>
+<header>
+  <a class="wordmark" href="#top" aria-label="Vidit Shah Engineering Lab">VS<span>/</span>LAB</a>
+  <nav aria-label="Main navigation">
+    <a href="#copilot">AI Copilot</a><a href="#workbench">Workbench</a><a href="#evidence">Evidence</a><a href="#decisions">Notebook</a><a href="https://github.com/rockstar5656">GitHub ↗</a>
+  </nav>
+  <span class="mode"><i></i> LOCAL-FIRST</span>
+</header>
+<main id="top">
+<section class="hero">
+  <div class="eyebrow">VIDIT SHAH · ROBOTICS × AI × SYSTEMS</div>
+  <div class="hero-grid">
+    <div>
+      <h1>Don't just read<br>the portfolio.<br><span>Interrogate it.</span></h1>
+      <div class="hero-bottom"><p>⚙️ Systems. 🤖 Intelligence. 👁️ Perception.<br>🧪 Experiments you can inspect, break, and discuss.</p><a class="text-link" href="#copilot">MEET THE COPILOT <span>↓</span></a></div>
+    </div>
+    <aside class="hero-terminal" aria-label="Lab status">
+      <div class="terminal-head"><span>VIDIT_LAB / SYSTEM STATUS</span><b>● LIVE</b></div>
+      <div class="terminal-lines">
+        <div><span>focus</span><strong>robotics + ai</strong></div>
+        <div><span>interaction</span><strong>human ↔ system</strong></div>
+        <div><span>inference</span><strong>browser-local</strong></div>
+        <div><span>backend</span><strong>none required</strong></div>
+      </div>
+      <div class="terminal-foot"><span>build 2026.09</span><span>privacy: local chat</span></div>
+    </aside>
+  </div>
+  <div class="hero-ruler"><span>01 / INTERACTIVE ENGINEERING</span><span>SOURCE → EVIDENCE → EXPERIMENT → DISCUSSION</span><span>⌘ PRESS ENTER IN CHAT</span></div>
+</section>
+
+<section id="copilot" class="copilot-section">
+  <div class="section-intro"><div><div class="eyebrow">🤖 LAB COPILOT</div><h2>Talk to a tiny model that knows this portfolio.</h2></div><p>Ask about projects, architecture, tradeoffs, failures, or the engineering behind the code.<br><span class="local-badge">● runs in your browser</span></p></div>
+  <div class="copilot-grid">
+    <div class="copilot-panel panel">
+      <div class="copilot-top">
+        <div><span class="copilot-dot"></span><b>VIDIT-LM</b><small>SmolLM2 · 360M parameters · local inference</small></div>
+        <span id="ai-status" class="chip">READY TO LOAD</span>
+      </div>
+      <div id="chat-log" class="chat-log" aria-live="polite">
+        <div class="chat-msg bot"><div class="avatar">🤖</div><div><span class="speaker">LAB COPILOT</span><p>Hey 👋 I’m the small local model attached to Vidit’s engineering notebook. Ask me something difficult — <em>“what is actually impressive here?”</em> is a good start.</p></div></div>
+      </div>
+      <div class="quick-prompts" aria-label="Quick prompts">
+        <button type="button" data-prompt="What is actually impressive about this portfolio?"><span>🔥</span> Impress me</button>
+        <button type="button" data-prompt="Explain the strongest engineering decision in this lab."><span>🧠</span> Best decision</button>
+        <button type="button" data-prompt="What would a robotics hiring manager notice here?"><span>🎯</span> Hiring view</button>
+        <button type="button" data-prompt="What should Vidit build next to make this even stronger?"><span>🚀</span> Next move</button>
+      </div>
+      <form id="chat-form" class="chat-input" autocomplete="off">
+        <label class="sr-only" for="chat-text">Ask the Lab Copilot</label>
+        <textarea id="chat-text" rows="1" maxlength="600" placeholder="Ask the lab anything…" spellcheck="true"></textarea>
+        <button type="submit" id="chat-send" aria-label="Send message">↗</button>
+      </form>
+      <div class="copilot-meta"><span id="model-load">First message downloads a small model once and caches it.</span><button type="button" id="clear-chat">Clear chat</button></div>
+    </div>
+    <aside class="copilot-side">
+      <div class="signal-card"><span class="signal-icon">🧬</span><div><b>Evidence-aware</b><p>The model gets a curated context about this lab. It is told not to invent projects, metrics, employers, or achievements.</p></div></div>
+      <div class="signal-card"><span class="signal-icon">⚡</span><div><b>WebGPU when available</b><p>The browser uses GPU acceleration when supported, with a CPU/WASM fallback path for compatible browsers.</p></div></div>
+      <div class="signal-card"><span class="signal-icon">🔒</span><div><b>No chat backend</b><p>Conversation text stays in the page. Model inference happens client-side; the site does not need an application server.</p></div></div>
+      <div class="copilot-links"><span>OPEN SOURCE PATH</span><a href="https://huggingface.co/HuggingFaceTB/SmolLM2-360M-Instruct">Model card ↗</a><a href="https://huggingface.co/docs/transformers.js">Transformers.js ↗</a></div>
+    </aside>
+  </div>
+</section>
+
+<section id="workbench" class="workbench">
+  <div class="section-intro"><div><div class="eyebrow">⚙️ SYSTEM 001</div><h2>Break the request pipeline.</h2></div><p>Configure an order. Trace the protocol.<br>Inject a failure. Understand the boundary.</p></div>
+  <div class="lab-grid"><form id="request-form" class="panel controls"><div class="panel-heading"><span>01 / INPUT</span><span class="chip">DEMO ONLY</span></div>
+  <label>Symbol<input id="symbol" name="symbol" value="BTCUSDT" maxlength="20" autocomplete="off" spellcheck="false"></label>
+  <div class="two-col"><label>Side<select id="side" name="side"><option>BUY</option><option>SELL</option></select></label><label>Order type<select id="order-type" name="type"><option>LIMIT</option><option>MARKET</option><option>STOP_LIMIT</option></select></label></div>
+  <label>Quantity<input id="quantity" name="quantity" value="0.01" inputmode="decimal" autocomplete="off"></label>
+  <div class="two-col"><label>Limit price<input id="price" name="price" value="65000" inputmode="decimal"></label><label>Stop price<input id="stop-price" name="stopPrice" placeholder="Required for STOP_LIMIT" inputmode="decimal"></label></div>
+  <label>Time in force<select id="tif" name="tif"><option>GTC</option><option>IOC</option><option>FOK</option></select></label>
+  <label>Inject an outcome<select id="scenario" name="scenario"><option value="accepted">Accepted response</option><option value="rejected">Exchange rejection</option><option value="timeout">Response lost / timeout</option></select></label>
+  <button class="run" type="submit" id="run"><span>TRACE REQUEST</span><span>↗</span></button>
+  <div class="presets"><span>QUICK EXPERIMENTS</span><button type="button" data-preset="invalid">🧨 Invalid input</button><button type="button" data-preset="timeout">🕳️ Lost response</button><button type="button" data-preset="stop">🛑 Stop-limit</button></div>
+  <p class="fine">Runs entirely in your browser. No account connection. No live orders.</p></form>
+  <div class="panel trace-panel"><div class="panel-heading"><span>02 / EXECUTION TRACE</span><span id="trace-status" class="chip">READY</span></div><div class="pipeline" aria-label="Request pipeline"><div data-stage="validate"><b>01</b><span>Validate</span></div><div data-stage="translate"><b>02</b><span>Translate</span></div><div data-stage="sign"><b>03</b><span>Sign</span></div><div data-stage="resolve"><b>04</b><span>Resolve</span></div></div>
+  <div id="output" role="status" aria-live="polite"><div class="empty"><span class="empty-code">await request.trace()</span><h3>Your experiment starts here.</h3><p>Try a valid request, then lose its response.<br>The same request can produce very different knowledge. 🧠</p></div></div>
+  <div class="trace-footer"><span id="duration">CLIENT PROCESSING / NOT EXCHANGE LATENCY</span><button id="export" type="button" disabled>Export trace ↓</button></div></div></div>
+  <div class="lab-note"><b>SIMULATION CONTRACT</b><p>This is an educational adaptation of the public Python project. Validation and translation illustrate documented rules; server outcomes are explicitly simulated. Exchange balances, live execution, and authenticated account access are outside this demo.</p></div>
+</section>
+
+<section id="evidence"><div class="section-intro"><div><div class="eyebrow">🔎 FOLLOW THE EVIDENCE</div><h2>Every interesting claim has a trail.</h2></div><p>Open a component.<br>Inspect the implementation it refers to.</p></div><div class="evidence-grid">
+<a class="evidence-card" href="https://github.com/rockstar5656/binance-futures-trading-bot/blob/d7656c42b14aaec7326cc19d8f3d5fa2280389f1/bot/validators.py"><span>01 / VALIDATION ↗</span><h3>🛡️ Stop bad input early.</h3><p>Normalization, decimal inputs, and order-specific field requirements.</p><code>bot/validators.py</code></a>
+<a class="evidence-card" href="https://github.com/rockstar5656/binance-futures-trading-bot/blob/d7656c42b14aaec7326cc19d8f3d5fa2280389f1/bot/orders.py"><span>02 / TRANSLATION ↗</span><h3>🔁 Own the protocol boundary.</h3><p>Translate a user-facing STOP_LIMIT request into the exchange's STOP type.</p><code>bot/orders.py</code></a>
+<a class="evidence-card" href="https://github.com/rockstar5656/binance-futures-trading-bot/blob/d7656c42b14aaec7326cc19d8f3d5fa2280389f1/bot/client.py"><span>03 / TRANSPORT ↗</span><h3>🔐 Make the request explicit.</h3><p>HMAC signing, bounded HTTP timeouts, and exception translation.</p><code>bot/client.py</code></a>
+<a class="evidence-card" href="https://github.com/rockstar5656/binance-futures-trading-bot/tree/d7656c42b14aaec7326cc19d8f3d5fa2280389f1/tests"><span>04 / VERIFICATION ↗</span><h3>🧪 Challenge the behavior.</h3><p>Inspect tests and separate local guarantees from live integration evidence.</p><code>tests/</code></a></div><div class="revision">SOURCE SNAPSHOT <code>d7656c4</code><span>Links point to an immutable revision.</span></div></section>
+
+<section id="decisions"><div class="section-intro"><div><div class="eyebrow">📓 ENGINEERING NOTEBOOK</div><h2>The interesting part is the tradeoff.</h2></div></div>
+<details open><summary><span>DECISION 001</span>A timeout doesn't mean failure.<b>+</b></summary><div class="decision-body"><p>The server can accept a write before its response disappears. A transport exception tells us what the client observed; it does not prove what the server did.</p><p>The public order layer preserves this distinction by propagating network errors while turning explicit exchange rejections into structured results. Automatic reconciliation is a future extension, not a capability claimed here.</p><a href="https://github.com/rockstar5656/rockstar5656/blob/main/notebook/001-network-uncertainty.md">Read the source analysis ↗</a></div></details>
+<details><summary><span>DECISION 002</span>Translate concepts at the edge.<b>+</b></summary><div class="decision-body"><p>The command-line interface can name an order STOP_LIMIT while the adapter emits STOP. An explicit mapping concentrates protocol maintenance and gives tests a small, inspectable target.</p><a href="https://github.com/rockstar5656/rockstar5656/blob/main/notebook/002-protocol-boundaries.md">Read the source analysis ↗</a></div></details>
+<details><summary><span>EXPERIMENTS</span>Measurements need a method.<b>+</b></summary><div class="decision-body"><p>Export a trace to inspect this browser experiment. Its processing duration includes browser overhead and measures neither Python performance nor exchange latency. The simulated outcome is selected by you, not measured from a server.</p><a href="https://github.com/rockstar5656/rockstar5656/blob/main/notebook/experiment-template.md">Open the experiment template ↗</a></div></details>
+</section>
+
+<section class="closing"><div class="eyebrow">VIDIT SHAH / OPEN ENGINEERING</div><h2>Build systems people can <span>question.</span></h2><div class="closing-actions"><a href="https://github.com/rockstar5656/rockstar5656/tree/main/lab">READ THIS LAB'S SOURCE ↗</a><a href="https://github.com/rockstar5656">VIEW GITHUB ↗</a></div><p class="closing-note">The portfolio is deliberately interactive: a person can ask, inspect, break, reproduce, and then open the exact source behind the claim.</p></section>
+</main>
+<footer><span>VS / LAB</span><span>🧠 local model · ⚙️ reproducible systems · 🔬 public evidence</span><a href="https://github.com/rockstar5656">@rockstar5656 ↗</a></footer>
+<script type="module" src="app.js"></script>
 </body></html>
