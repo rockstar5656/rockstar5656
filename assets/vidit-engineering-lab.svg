@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="420" viewBox="0 0 1280 420" fill="none">
+<defs>
+  <linearGradient id="bg" x1="0" y1="0" x2="1280" y2="420" gradientUnits="userSpaceOnUse"><stop stop-color="#08111E"/><stop offset=".5" stop-color="#0B1222"/><stop offset="1" stop-color="#130D20"/></linearGradient>
+  <linearGradient id="line" x1="50" y1="0" x2="1230" y2="420" gradientUnits="userSpaceOnUse"><stop stop-color="#69D7FF"/><stop offset=".5" stop-color="#9D8CFF"/><stop offset="1" stop-color="#78E4D0"/></linearGradient>
+  <radialGradient id="glow"><stop stop-color="#73D9FF" stop-opacity=".24"/><stop offset="1" stop-color="#73D9FF" stop-opacity="0"/></radialGradient>
+  <filter id="blur"><feGaussianBlur stdDeviation="20"/></filter>
+  <filter id="glowf"><feGaussianBlur stdDeviation="3" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+  <style>
+    .t{font-family:Inter,Segoe UI,Arial,sans-serif;fill:#F3F7FC}.m{font-family:Inter,Segoe UI,Arial,sans-serif;fill:#8FA0B4}.mono{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;fill:#87DDF6;font-size:10px;letter-spacing:2px}.node{fill:#0F1927;stroke:#29405A}.thin{stroke:#29405A;stroke-width:1}.wire{stroke:url(#line);stroke-opacity:.48;stroke-width:1.5;stroke-dasharray:6 8}.pulse{animation:pulse 2.8s ease-in-out infinite}.float{animation:float 5s ease-in-out infinite}.dash{animation:dash 8s linear infinite}@keyframes pulse{50%{opacity:.55;transform:scale(1.06)}}@keyframes float{50%{transform:translateY(-7px)}}@keyframes dash{to{stroke-dashoffset:-140}}
+  </style>
+</defs>
+<rect width="1280" height="420" rx="28" fill="url(#bg)"/>
+<ellipse cx="280" cy="170" rx="300" ry="190" fill="url(#glow)" filter="url(#blur)"/>
+<ellipse cx="1010" cy="270" rx="330" ry="210" fill="#9D8CFF" fill-opacity=".10" filter="url(#blur)"/>
+<path d="M0 360C210 315 350 402 535 365C720 328 855 404 1035 355C1125 331 1200 333 1280 350V420H0Z" fill="#050A12"/>
+<g class="thin" opacity=".55"><path d="M70 70H1210M70 140H1210M70 210H1210M70 280H1210M70 350H1210"/><path d="M160 35V375M300 35V375M440 35V375M580 35V375M720 35V375M860 35V375M1000 35V375M1140 35V375"/></g>
+<text x="72" y="66" class="mono">VIDIT SHAH / ENGINEERING SYSTEMS</text>
+<text x="72" y="108" class="t" font-size="32" font-weight="800">Perception → Intelligence → Action</text>
+<text x="72" y="136" class="m" font-size="14">Robotics &amp; automation • AI/ML • vision • local AI infrastructure • software systems</text>
+<path class="wire dash" d="M210 224C350 125 420 126 545 225C660 316 730 315 845 222C945 142 1030 150 1110 220"/>
+<path class="wire dash" d="M210 290C355 360 455 345 545 282C660 205 735 202 845 283C940 354 1035 351 1110 286"/>
+<g class="float">
+ <rect x="140" y="200" width="170" height="62" rx="16" class="node"/>
+ <circle cx="163" cy="223" r="7" fill="#78E4D0" class="pulse" filter="url(#glowf)"/>
+ <text x="181" y="227" class="t" font-size="12" font-weight="800">PERCEPTION</text><text x="161" y="246" class="m" font-size="9">sensors • vision • data</text>
+</g>
+<g class="float" style="animation-delay:-1.2s">
+ <rect x="455" y="190" width="180" height="86" rx="18" class="node"/>
+ <circle cx="545" cy="231" r="26" fill="url(#glow)"/><circle cx="545" cy="231" r="14" fill="#121E31" stroke="#79DFFF"/>
+ <text x="545" y="210" text-anchor="middle" class="t" font-size="12" font-weight="800">INTELLIGENCE</text><text x="545" y="297" text-anchor="middle" class="m" font-size="9">LLMs • ML • agents • inference</text>
+</g>
+<g class="float" style="animation-delay:-2.1s">
+ <rect x="820" y="200" width="170" height="62" rx="16" class="node"/>
+ <circle cx="843" cy="223" r="7" fill="#9D8CFF" class="pulse" filter="url(#glowf)"/>
+ <text x="861" y="227" class="t" font-size="12" font-weight="800">PLANNING</text><text x="841" y="246" class="m" font-size="9">logic • routing • constraints</text>
+</g>
+<g class="float" style="animation-delay:-3s">
+ <rect x="1010" y="200" width="170" height="62" rx="16" class="node"/>
+ <circle cx="1033" cy="223" r="7" fill="#69D7FF" class="pulse" filter="url(#glowf)"/>
+ <text x="1051" y="227" class="t" font-size="12" font-weight="800">ACTION</text><text x="1031" y="246" class="m" font-size="9">control • automation • APIs</text>
+</g>
+<g opacity=".9">
+ <text x="72" y="390" class="m" font-size="10">I build the bridge between intelligent software and systems that can actually do something.</text>
+ <text x="1210" y="390" text-anchor="end" class="mono">LOCAL • SYSTEMS • SHIPPING</text>
+</g>
+</svg>
