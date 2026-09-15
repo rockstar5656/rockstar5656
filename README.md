@@ -1,62 +1,74 @@
-﻿<p align="center"><a href="https://rockstar5656.github.io/rockstar5656/"><img src="assets/header.svg" alt="Vidit Shah / Systems Lab — Open the system. See what happens." width="100%" /></a></p>
+<p align="center"><a href="https://rockstar5656.github.io/rockstar5656/"><img src="assets/header.svg" alt="Vidit Shah / Engineering Lab — Interrogate the portfolio." width="100%" /></a></p>
 
 <p align="center">
-<a href="https://rockstar5656.github.io/rockstar5656/"><b>LAUNCH THE LAB ↗</b></a> &nbsp; / &nbsp;
-<a href="#system-001--request-engineering">SYSTEMS</a> &nbsp; / &nbsp;
-<a href="notebook/README.md">DECISIONS</a> &nbsp; / &nbsp;
-<a href="#public-engineering-index">PUBLIC INDEX</a>
+<a href="https://rockstar5656.github.io/rockstar5656/"><b>🤖 TALK TO THE LAB ↗</b></a> &nbsp; / &nbsp;
+<a href="#systems">⚙️ SYSTEMS</a> &nbsp; / &nbsp;
+<a href="notebook/README.md">📓 DECISIONS</a> &nbsp; / &nbsp;
+<a href="https://github.com/rockstar5656?tab=repositories">🧬 PUBLIC INDEX</a>
 </p>
 
 # Vidit Shah
 
-**Python systems · API integration · Automation**
+**Robotics × AI × Automation × Systems**
 
-I build software with explicit boundaries and inspectable behavior. My public work explores the engineering between a user's intent and a remote system: validation, protocol translation, request signing, and failure handling.
+> **Don't just read the portfolio. Interrogate it.**
 
-This profile is an entry point into the source, decisions, and experiments behind that work. Start by running the lab.
+I build software and intelligent systems with an emphasis on explicit boundaries, inspectable behavior, automation, and the engineering decisions between intent and execution.
 
-## 01 / Try the system
+This profile is deliberately more than a résumé. **Run the lab. Ask the local copilot. Break the simulation. Follow a claim back to source.**
 
-[![Launch the interactive request workbench — validate, translate, sign, resolve](assets/workbench.svg)](https://rockstar5656.github.io/rockstar5656/)
+## 🤖 The Lab Copilot
 
-**An interactive browser workbench.** Configure an order, inspect a real local HMAC-SHA256 signature, and choose an accepted response, rejection, or lost response. Export the complete trace as JSON.
+The interactive lab now includes a **browser-local AI copilot** powered by a compact open small language model. It can discuss the public engineering context of this profile and distinguish documented work from proposed ideas.
 
-- **Break the input.** Watch validation stop the pipeline before signing.
-- **Inspect the boundary.** See `STOP_LIMIT` translate into `STOP`.
-- **Lose the response.** Explore why a timeout leaves the remote outcome unknown.
-- **Follow the evidence.** Open the exact public source revision behind each component.
+- 🧠 **Ask:** architecture, tradeoffs, failures, engineering decisions, hiring perspective, next builds.
+- ⚡ **Local-first:** inference happens in the browser; WebGPU is used when available with a compatible fallback.
+- 🔒 **No chat backend:** conversation state stays in the browser and can be cleared locally.
+- 🔎 **Evidence-aware:** the copilot is given curated public context and instructed not to invent achievements or metrics.
 
-[**Run an experiment →**](https://rockstar5656.github.io/rockstar5656/) · [Lab source](lab/) · [Verification suite](tests/lab.test.mjs) · [Simulation contract](lab/README.md)
+**First use downloads the model into the browser cache.** A modern Chromium-based browser with WebGPU gives the best experience.
 
-<sub>The lab is an educational JavaScript adaptation. Server outcomes are simulated; it connects to no account and places no orders. Browser processing durations measure this demo only.</sub>
+[**Open the AI Lab →**](https://rockstar5656.github.io/rockstar5656/#copilot)
 
-## System 001 / Request engineering
+## ⚙️ Systems
 
-### Binance Futures Testnet CLI
+### System 001 / Request engineering
 
-A layered Python command-line application for market, limit, and stop-limit requests. The interesting engineering problem is preserving meaning as an input crosses validation, exchange parameters, signed transport, and an uncertain network.
+**Binance Futures Testnet CLI** — a layered Python command-line application for market, limit, and stop-limit requests. The engineering focus is preserving meaning as an input crosses validation, protocol translation, signed transport, and an uncertain network.
 
 ```mermaid
 flowchart LR
-    A[User command] --> B[Validate]
+    A[User intent] --> B[Validate]
     B --> C[Translate]
-    C --> D[Sign and send]
+    C --> D[Sign + transport]
     D --> E{Client observation}
     E --> F[Acknowledged]
     E --> G[Explicit rejection]
     E --> H[Response missing: unknown]
 ```
 
-**What to inspect**
+**Inspect the evidence**
 
-- [Validation](https://github.com/rockstar5656/binance-futures-trading-bot/blob/d7656c42b14aaec7326cc19d8f3d5fa2280389f1/bot/validators.py): normalized requests, decimal values, and cross-field rules.
-- [Order adapter](https://github.com/rockstar5656/binance-futures-trading-bot/blob/d7656c42b14aaec7326cc19d8f3d5fa2280389f1/bot/orders.py): protocol translation and structured rejection results.
-- [REST client](https://github.com/rockstar5656/binance-futures-trading-bot/blob/d7656c42b14aaec7326cc19d8f3d5fa2280389f1/bot/client.py): HMAC signing, timeouts, and transport exceptions.
-- [Tests](https://github.com/rockstar5656/binance-futures-trading-bot/tree/d7656c42b14aaec7326cc19d8f3d5fa2280389f1/tests): inspect which guarantees are established without the network.
+- [🛡️ Validation](https://github.com/rockstar5656/binance-futures-trading-bot/blob/d7656c42b14aaec7326cc19d8f3d5fa2280389f1/bot/validators.py) — normalized requests, decimal values, cross-field rules.
+- [🔁 Order adapter](https://github.com/rockstar5656/binance-futures-trading-bot/blob/d7656c42b14aaec7326cc19d8f3d5fa2280389f1/bot/orders.py) — protocol translation and structured rejection results.
+- [🔐 REST client](https://github.com/rockstar5656/binance-futures-trading-bot/blob/d7656c42b14aaec7326cc19d8f3d5fa2280389f1/bot/client.py) — HMAC signing, timeouts, transport exceptions.
+- [🧪 Tests](https://github.com/rockstar5656/binance-futures-trading-bot/tree/d7656c42b14aaec7326cc19d8f3d5fa2280389f1/tests) — inspect which guarantees are established without the network.
 
-[Explore the project →](https://github.com/rockstar5656/binance-futures-trading-bot) · [Technical case study](systems/request-engineering.md)
+[**Run the interactive system →**](https://rockstar5656.github.io/rockstar5656/#workbench) · [Technical case study](systems/request-engineering.md)
 
-## 02 / Decisions worth discussing
+## 🔬 What makes this profile different
+
+**01 / Interrogate** — Ask an AI copilot about the engineering instead of scanning a static résumé.
+
+**02 / Experiment** — Configure a request, inject an invalid input, simulate a rejection, or create an unknown-outcome timeout.
+
+**03 / Verify** — Export the trace and open the exact source revision behind the behavior.
+
+**04 / Decide** — Read the engineering notebook to understand *why* the system is shaped this way.
+
+**05 / Reproduce** — Clone the repository and run the local verification suite without credentials.
+
+## 📓 Decisions worth discussing
 
 **A timeout doesn't establish rejection.** The remote service may have accepted a write before the response disappeared. Preserving uncertainty gives the caller a reason to reconcile before retrying.
 
@@ -66,12 +78,12 @@ flowchart LR
 
 [Read the analysis →](notebook/002-protocol-boundaries.md)
 
-**A demo needs a verification contract.** This lab checks a published HMAC test vector, decimal precision, invalid inputs, request translation, and three simulated outcome states.
+**A demo needs a verification contract.** The browser lab checks a published HMAC test vector, decimal precision, invalid inputs, request translation, and three simulated outcome states.
 
-[Inspect the lab's test suite →](tests/lab.test.mjs) · [Map claims to evidence →](systems/evidence.md)
+[Inspect the lab tests →](tests/lab.test.mjs) · [Map claims to evidence →](systems/evidence.md)
 
 <details>
-<summary><b>03 / Reproduce the browser lab's core checks</b></summary>
+<summary><b>🧪 Reproduce the browser lab</b></summary>
 
 Requires Node.js 22 or later. No dependency installation or credentials are needed.
 
@@ -81,18 +93,18 @@ cd rockstar5656
 node --test tests/lab.test.mjs
 ```
 
-To run the interface locally with Python installed:
+To run the interface locally:
 
 ```bash
 python -m http.server 8765 --bind 127.0.0.1 --directory lab
 ```
 
-Open `http://127.0.0.1:8765`. Web Crypto requires a secure context such as localhost or HTTPS.
+Open `http://127.0.0.1:8765`.
 
 </details>
 
 <details>
-<summary><b>04 / Inspect and verify the Python project</b></summary>
+<summary><b>🔎 Inspect the Python project</b></summary>
 
 ```bash
 git clone https://github.com/rockstar5656/binance-futures-trading-bot.git
@@ -108,24 +120,22 @@ These are the project's documented offline test commands. They do not place orde
 
 </details>
 
-## Public engineering index
+## 🌐 Public engineering index
 
 <!-- PUBLIC-INDEX:START -->
 **Public snapshot · 2026-09-15 11:55 UTC**
 
-1 original public project repositories · 0 public forks
+1 original public project repository · 0 public forks
 
-- [binance-futures-trading-bot](https://github.com/rockstar5656/binance-futures-trading-bot) — Python CLI trading bot for Binance USDT-M Futures Testnet featuring Market, Limit & Stop-Limit orders, structured logging, validation, exception handling, and modular architecture. (Public; last repository update 2026-07-17).
+- [binance-futures-trading-bot](https://github.com/rockstar5656/binance-futures-trading-bot) — Python CLI trading bot for Binance USDT-M Futures Testnet featuring Market, Limit & Stop-Limit orders, structured logging, validation, exception handling, and modular architecture.
 
 **Language inventory by GitHub-reported source bytes:** Python: 51,352 bytes.
-
-Source: public GitHub repository metadata and language endpoints. Repository update timestamps may reflect metadata changes; they are not contribution counts.
 <!-- PUBLIC-INDEX:END -->
 
-<sub>Updated weekly from public GitHub metadata. Source bytes describe repository inventory; they are not a measure of expertise. Private repositories are excluded.</sub>
+<sub>Private repositories are intentionally excluded from the public index. The profile does not claim expertise from repository size alone.</sub>
 
 ---
 
-**Source → architecture → decisions → verification.**
+<p align="center"><b>Source → architecture → decisions → experiments → discussion.</b></p>
 
-[Interactive lab](https://rockstar5656.github.io/rockstar5656/) · [Engineering notebook](notebook/README.md) · [Public repositories](https://github.com/rockstar5656?tab=repositories) · [Profile source](https://github.com/rockstar5656/rockstar5656)
+<p align="center"><a href="https://rockstar5656.github.io/rockstar5656/">🚀 Interactive Lab</a> · <a href="notebook/README.md">📓 Engineering Notebook</a> · <a href="https://github.com/rockstar5656?tab=repositories">🧬 Public Repositories</a></p>
