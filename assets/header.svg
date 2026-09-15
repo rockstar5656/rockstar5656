@@ -1,9 +1,14 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="340" viewBox="0 0 1200 340" role="img" aria-labelledby="title desc">
-<title id="title">Vidit Shah — engineering notebook</title><desc id="desc">A dark typographic banner for Python systems and automation.</desc>
-<rect width="1200" height="340" rx="18" fill="#101820"/>
-<path d="M48 55H1152M48 285H1152" stroke="#35434c"/>
-<text x="52" y="91" font-family="monospace" font-size="15" fill="#83e6bc" letter-spacing="4">ENGINEERING NOTEBOOK / ROCKSTAR5656</text>
-<text x="48" y="179" font-family="Arial, sans-serif" font-size="76" font-weight="700" fill="#f5f1e7">VIDIT SHAH</text>
-<text x="52" y="224" font-family="Arial, sans-serif" font-size="25" fill="#b9c4ca">Systems. Automation. The decisions behind the code.</text>
-<text x="52" y="313" font-family="monospace" font-size="13" fill="#83e6bc">SOURCE → ARCHITECTURE → DECISIONS → VERIFICATION</text>
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="470" viewBox="0 0 1280 470" role="img" aria-labelledby="title desc">
+<title id="title">Vidit Shah / Systems Lab</title><desc id="desc">Open the system. See what happens. Python, protocols, and failure modes.</desc>
+<rect width="1280" height="470" rx="12" fill="#101310"/>
+<path d="M50 69H1230M50 390H1230" stroke="#30382c"/>
+<text x="50" y="43" fill="#c7f56b" font-family="monospace" font-size="15" letter-spacing="3">VS / SYSTEMS LAB</text>
+<text x="1230" y="43" text-anchor="end" fill="#a4ab9c" font-family="monospace" font-size="12">ROCKSTAR5656 / PUBLIC ENGINEERING</text>
+<text x="50" y="124" fill="#c7f56b" font-family="monospace" font-size="13" letter-spacing="3">VIDIT SHAH</text>
+<text x="45" y="218" fill="#eeefe5" font-family="Arial,sans-serif" font-weight="700" font-size="82" letter-spacing="-4">Open the system.</text>
+<text x="45" y="310" fill="#c7f56b" font-family="Arial,sans-serif" font-weight="700" font-size="82" letter-spacing="-4">See what happens.</text>
+<text x="50" y="352" fill="#a4ab9c" font-family="Arial,sans-serif" font-size="21">Python. Protocols. Failure modes. The decisions behind the code.</text>
+<text x="50" y="430" fill="#a4ab9c" font-family="monospace" font-size="12" letter-spacing="2">01 / RUN A TRACE</text>
+<text x="465" y="430" fill="#a4ab9c" font-family="monospace" font-size="12" letter-spacing="2">02 / INJECT A FAILURE</text>
+<text x="950" y="430" fill="#c7f56b" font-family="monospace" font-size="12" letter-spacing="2">03 / FOLLOW THE SOURCE</text>
 </svg>

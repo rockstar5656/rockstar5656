@@ -23,4 +23,6 @@ The weekly workflow updates the public index. It uses the workflow token to read
 
 The engineering notebook already contains two source analyses. For future experiments, copy its template and fill results only after measurement. Replace moving `main` source links with immutable commit links when recording a finalized experiment.
 
-Interactive JavaScript and live dashboards do not execute inside a GitHub profile README. If you later want an interactive lab, build a separate site and link it from the profile. Robotics demos, AI Q&A, benchmarks, and deployment claims should be added when working implementations and public evidence exist.
+Interactive JavaScript does not execute inside the profile README. The profile links to the static systems lab hosted at `https://rockstar5656.github.io/rockstar5656/`. Its GitHub Pages publication workflow tests the core before deployment. A separate Sites deployment provides an owner-private copy.
+
+The lab is a browser-only educational simulation with real local cryptographic signing. See `lab/README.md` for its scope. Robotics demos, AI Q&A, and performance benchmarks should be added when working implementations and public evidence exist.

@@ -10,7 +10,7 @@ A user-facing command names a stop-limit order `STOP_LIMIT`. The exchange reques
 
 `_order_params_from_request` maps the order type, serializes decimal quantities, and adds `price`, `stopPrice`, and `timeInForce` for the relevant order types. The HTTP client receives protocol parameters rather than CLI options.
 
-Source: [`bot/orders.py`](https://github.com/rockstar5656/binance-futures-trading-bot/blob/main/bot/orders.py).
+Source: [`bot/orders.py`](https://github.com/rockstar5656/binance-futures-trading-bot/blob/d7656c42b14aaec7326cc19d8f3d5fa2280389f1/bot/orders.py).
 
 ## Tradeoff
 

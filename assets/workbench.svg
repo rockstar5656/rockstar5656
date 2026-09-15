@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="360" viewBox="0 0 1280 360" role="img" aria-labelledby="title desc">
+<title id="title">Interactive request workbench — launch the lab</title><desc id="desc">Four stages: validate, translate, sign, resolve. Try accepted, rejected, and lost response scenarios in a browser simulation.</desc>
+<rect x="1" y="1" width="1278" height="358" rx="10" fill="#171b16" stroke="#30382c"/>
+<text x="35" y="44" font-family="monospace" fill="#c7f56b" font-size="12" letter-spacing="2">SYSTEM 001 / INTERACTIVE REQUEST WORKBENCH</text>
+<text x="1245" y="44" text-anchor="end" font-family="monospace" fill="#a4ab9c" font-size="11">BROWSER SIMULATION</text>
+<path d="M35 66H1245" stroke="#30382c"/>
+<g font-family="monospace"><text x="35" y="107" fill="#a4ab9c" font-size="12">CONFIGURE</text><text x="35" y="140" fill="#eeefe5" font-size="17">BTCUSDT / BUY / LIMIT</text><text x="35" y="170" fill="#a4ab9c" font-size="13">quantity: 0.01</text><text x="35" y="195" fill="#a4ab9c" font-size="13">price: 65000</text></g>
+<path d="M375 110H1200" stroke="#65734e" stroke-width="2"/>
+<g font-family="monospace" font-size="14" text-anchor="middle"><rect x="360" y="88" width="155" height="45" fill="#222e19" stroke="#65734e"/><text x="437" y="116" fill="#c7f56b">01 VALIDATE</text><rect x="585" y="88" width="155" height="45" fill="#222e19" stroke="#65734e"/><text x="662" y="116" fill="#c7f56b">02 TRANSLATE</text><rect x="810" y="88" width="155" height="45" fill="#222e19" stroke="#65734e"/><text x="887" y="116" fill="#c7f56b">03 SIGN</text><rect x="1035" y="88" width="155" height="45" fill="#222e19" stroke="#65734e"/><text x="1112" y="116" fill="#c7f56b">04 RESOLVE</text></g>
+<text x="360" y="178" font-family="monospace" font-size="13" fill="#a4ab9c">Real local HMAC signing. Explicitly simulated outcomes.</text>
+<text x="360" y="212" font-family="monospace" font-size="13" fill="#eeefe5">ACCEPTED → ACKNOWLEDGED</text><text x="360" y="238" font-family="monospace" font-size="13" fill="#ff9c89">REJECTED → KNOWN REJECTION</text><text x="760" y="238" font-family="monospace" font-size="13" fill="#e7ce78">RESPONSE LOST → UNKNOWN</text>
+<path d="M35 274H1245" stroke="#30382c"/>
+<text x="35" y="319" font-family="Arial,sans-serif" font-weight="700" font-size="23" fill="#eeefe5">Try the system. Export the trace. Inspect the source.</text><text x="1245" y="319" text-anchor="end" font-family="monospace" font-size="16" fill="#c7f56b">LAUNCH LAB ↗</text>
+</svg>

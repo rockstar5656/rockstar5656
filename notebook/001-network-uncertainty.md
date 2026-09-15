@@ -10,7 +10,7 @@ A client sends an order request and loses the response. A timeout cannot establi
 
 The REST client translates request exceptions into `NetworkError`. The order layer converts `BinanceAPIError` into an unsuccessful `OrderResult`, but allows `NetworkError` to propagate. Its inline comment explicitly identifies the order outcome as unknown.
 
-Source: [`bot/client.py`](https://github.com/rockstar5656/binance-futures-trading-bot/blob/main/bot/client.py), [`bot/orders.py`](https://github.com/rockstar5656/binance-futures-trading-bot/blob/main/bot/orders.py).
+Source: [`bot/client.py`](https://github.com/rockstar5656/binance-futures-trading-bot/blob/d7656c42b14aaec7326cc19d8f3d5fa2280389f1/bot/client.py), [`bot/orders.py`](https://github.com/rockstar5656/binance-futures-trading-bot/blob/d7656c42b14aaec7326cc19d8f3d5fa2280389f1/bot/orders.py).
 
 ## Tradeoff
 
