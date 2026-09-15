@@ -2,294 +2,133 @@
   <img src="assets/lab-carousel.svg" alt="Vidit Shah — Engineering Lab" width="100%" />
 </p>
 
-<p align="center">
-  <a href="https://viditshah5656.github.io/"><b>🌐 OPEN THE LAB</b></a>
-  &nbsp;·&nbsp;
-  <a href="https://github.com/viditshah5656?tab=repositories"><b>🧬 SOURCE</b></a>
-  &nbsp;·&nbsp;
-  <a href="https://orcid.org/0009-0009-0658-6157"><b>🔬 ORCID</b></a>
-</p>
+<div align="center">
+  <a href="https://checkmyprofolio.github.io/"><b>[ 🌐 LAUNCH PORTFOLIO ]</b></a>
+  &nbsp;&nbsp;&nbsp;·&nbsp;&nbsp;&nbsp;
+  <a href="https://orcid.org/0009-0009-0658-6157"><b>[ 🔬 VERIFY ORCID ]</b></a>
+</div>
 
-# VIDIT SHAH
+<br>
 
-### Robotics & AI Engineer · Intelligent Systems · Automation · Software
+<div align="center">
+  <img src="https://capsule-render.vercel.app/api?type=rect&color=0b1220&height=120&text=VIDIT%20SHAH&desc=ROBOTICS%20%7C%20AI%20%7C%20INTELLIGENT%20SYSTEMS&fontColor=ffffff&descAlignY=70&descSize=16" width="100%" />
+</div>
 
-> **I don't build isolated demos. I design systems — from perception and reasoning to planning, control, automation, and the interfaces that make complex technology usable.**
+> **“I don't build isolated demos. I design systems — from perception and reasoning to planning, control, automation, and the interfaces that make complex technology usable.”**
 
-I work across **robotics, artificial intelligence, computer vision, machine learning, local AI, intelligent agents, automation, control, API systems, and software engineering**. I care about the complete path between an idea and a working system: architecture, data flow, constraints, failure modes, verification, performance, and the decisions underneath the code.
+<br>
 
-<br />
+## 🛡️ ENGINEERING ARSENAL
 
-## 🧭 ENGINEERING PROFILE
-
-<table>
-<tr>
-<td width="50%">
-
-### 🤖 ROBOTICS
-
-Autonomous systems · robot perception · planning · control · sensors · automation · simulation
-
-</td>
-<td width="50%">
-
-### 🧠 AI / ML
-
-Machine learning · local language models · intelligent agents · model integration · inference systems
-
-</td>
-</tr>
-<tr>
-<td>
-
-### 👁️ PERCEPTION
-
-Computer vision · image understanding · detection pipelines · machine vision · visual decision systems
-
-</td>
-<td>
-
-### ⚙️ SYSTEMS
-
-Python · software architecture · APIs · automation · interfaces · reliability · verification
-
-</td>
-</tr>
+<table width="100%">
+  <tr>
+    <td width="50%" valign="top">
+      <h3>🤖 ROBOTICS & CONTROL</h3>
+      <code>Perception</code> <code>Planning</code> <code>Sensors</code> <code>Automation</code><br>
+      <i>Focusing on the complete loop: sensing the world, making decisions, and executing physical actions safely.</i>
+    </td>
+    <td width="50%" valign="top">
+      <h3>🧠 AI & MACHINE LEARNING</h3>
+      <code>Web-LLM</code> <code>Agents</code> <code>Llama 3.2</code> <code>Qwen</code><br>
+      <i>Deploying local models, orchestrating multi-agent systems, and building hardware-aware inference engines.</i>
+    </td>
+  </tr>
+  <tr>
+    <td width="50%" valign="top">
+      <h3>👁️ COMPUTER VISION</h3>
+      <code>Object Detection</code> <code>OpenCV</code> <code>Pipelines</code><br>
+      <i>Extracting meaning from pixels. Machine vision systems that act as the sensory input for intelligence.</i>
+    </td>
+    <td width="50%" valign="top">
+      <h3>⚙️ SYSTEM ARCHITECTURE</h3>
+      <code>Python</code> <code>TypeScript</code> <code>FastAPI</code> <code>React</code><br>
+      <i>Building robust backends, flawless API integrations, and UIs that hide immense backend complexity.</i>
+    </td>
+  </tr>
 </table>
 
----
+<br>
 
-## 📡 BUILD TELEMETRY
+## 📂 CLASSIFIED PROJECTS [AUTHORIZED ACCESS ONLY]
 
-<p align="center">
-  <img src="https://img.shields.io/badge/FOCUS-ROBOTICS%20%2B%20AI-7dd3fc?style=for-the-badge&labelColor=0b1220" />
-  <img src="https://img.shields.io/badge/MODE-SYSTEMS%20ENGINEERING-c4b5fd?style=for-the-badge&labelColor=0b1220" />
-  <img src="https://img.shields.io/badge/AI-LOCAL%20%2B%20AGENTS-86efac?style=for-the-badge&labelColor=0b1220" />
-  <img src="https://img.shields.io/badge/STATUS-BUILDING-fcd34d?style=for-the-badge&labelColor=0b1220" />
-</p>
+<details>
+<summary><b>🟢 [ACTIVE] PROFOLIO: Autonomous AI-Driven Web Portfolio</b></summary>
+<br>
+<blockquote>
+<b>Description:</b> A Next.js architectural showcase running a fully autonomous, local Llama-3.2-1B model directly in the browser using WebGPU. No external server requests—pure edge inference.<br>
+<b>Stack:</b> <code>Next.js</code>, <code>React</code>, <code>TypeScript</code>, <code>Web-LLM (WebGPU)</code>, <code>Tailwind</code><br>
+<b>Live:</b> <a href="https://checkmyprofolio.github.io/">checkmyprofolio.github.io</a>
+</blockquote>
+</details>
 
-<p align="center">
+<details>
+<summary><b>🔵 [ARCHIVE] MEERAAI: Intelligent Desktop Assistant</b></summary>
+<br>
+<blockquote>
+<b>Description:</b> A highly experimental local AI orchestrator. Features application-level model orchestration, hardware-aware memory constraints, and a secure desktop sandbox browser.<br>
+<b>Stack:</b> <code>Python</code>, <code>FastAPI</code>, <code>Electron</code>, <code>llama.cpp</code>, <code>Playwright</code><br>
+<b>Status:</b> Local source reviewed; exploring next-gen agent tooling.
+</blockquote>
+</details>
+
+<details>
+<summary><b>🟡 [ARCHIVE] BINANCE FUTURES TESTNET CLI</b></summary>
+<br>
+<blockquote>
+<b>Description:</b> A ruthless CLI tool for executing signed REST requests. Built around strict validation, error-boundary handling, and HMAC-SHA256 request signing.<br>
+<b>Stack:</b> <code>Python</code>, <code>Click</code>, <code>pytest</code>, <code>HMAC-SHA256</code><br>
+<b>Status:</b> Public testnet verification.<br>
+<b>Repo:</b> <a href="https://github.com/viditshah5656/binance-futures-trading-bot">binance-futures-trading-bot</a>
+</blockquote>
+</details>
+
+<details>
+<summary><b>🟣 [R&D] AARNA-AI & GEMINI-WEB2API</b></summary>
+<br>
+<blockquote>
+<b>Description:</b> Unreleased R&D into experimental AI pipelines, API experimentation, and intelligent data routing.<br>
+<b>Status:</b> Under development in the lab.
+</blockquote>
+</details>
+
+<br>
+
+## 📊 TELEMETRY & SYSTEM METRICS
+
+<div align="center">
   <img src="https://github-readme-stats.vercel.app/api?username=viditshah5656&show_icons=true&hide_border=true&bg_color=00000000&title_color=ffffff&text_color=94a3b8&icon_color=7dd3fc&rank_icon=github" width="49%" />
   <img src="https://github-readme-streak-stats.herokuapp.com/?user=viditshah5656&hide_border=true&background=00000000&ring=c4b5fd&fire=f9a8d4&currStreakLabel=ffffff&sideLabels=94a3b8&currStreakNum=ffffff&sideNums=ffffff&dates=64748b" width="49%" />
-</p>
+</div>
 
-<p align="center">
+<div align="center">
   <img src="assets/activity-console.svg" alt="Animated engineering activity console" width="100%" />
-</p>
+</div>
 
-<p align="center">
+<div align="center">
   <img src="https://github-readme-activity-graph.vercel.app/graph?username=viditshah5656&bg_color=00000000&color=94a3b8&line=7dd3fc&point=f9a8d4&area=true&hide_border=true" width="100%" />
-</p>
+</div>
 
----
+<br>
 
-## 🎛️ THE ENGINEERING COMMAND CENTER
+## ⚙️ INSTRUCTION CYCLE
 
-This profile is designed as a **command center**, not a résumé page.
-
-```text
-┌──────────────────────────────────────────────────────────────────────┐
-│                         VIDIT / SYSTEM MAP                           │
-├──────────────────────────────────────────────────────────────────────┤
-│                                                                      │
-│  👁 PERCEIVE ───────► 🧠 REASON ───────► 🗺 PLAN                   │
-│       │                    │                    │                    │
-│       ▼                    ▼                    ▼                    │
-│   vision / data       AI / models         algorithms               │
-│                                                                      │
-│                         │                                            │
-│                         ▼                                            │
-│                    ⚙️ CONTROL / ACT                                  │
-│                         │                                            │
-│                         ▼                                            │
-│                  📊 OBSERVE / VERIFY                                 │
-│                         │                                            │
-│                         └──────────────► 🔁 ITERATE                  │
-│                                                                      │
-└──────────────────────────────────────────────────────────────────────┘
+```yaml
+system_loop:
+  - Phase 1: PERCEIVE (Sensors / Vision Data)
+  - Phase 2: REASON (Local AI / ML Inference)
+  - Phase 3: PLAN (Algorithms / Constraints)
+  - Phase 4: ACT (Control Systems / Automation)
 ```
 
-The recurring design question behind my work is:
+<br>
 
-> **How do we turn uncertain inputs into reliable actions?**
+<div align="center">
+  <img src="https://skillicons.dev/icons?i=python,cpp,typescript,javascript,react,nextjs,opencv,pytorch,git,github,linux,docker" /><br><br>
+  <b>[ PERCEPTION → REASONING → PLANNING → CONTROL ]</b>
+</div>
 
-That question appears differently in a robot, a vision pipeline, an AI assistant, an automation system, or a distributed API workflow — but the engineering discipline remains the same.
+<br>
 
----
-
-## 🎞️ VISUAL BUILD STREAM
-
-The banner above is an **autoplaying SVG presentation** rather than a static cover image. It cycles through five engineering themes:
-
-`SYSTEM MINDSET` → `LOCAL AI` → `ROBOTICS LOOP` → `COMPUTER VISION` → `ENGINEERING EVIDENCE`
-
-The activity console below it also animates the engineering loop:
-
-`BUILD` → `VERIFY` → `PUBLISH`
-
-These visuals are intentionally generated as vectors so the repository stays lightweight. They can later be replaced with real screenshots, simulator frames, robot footage, architecture diagrams, and benchmark captures.
-
----
-
-## 🧠 WHAT I ACTUALLY EXPLORE
-
-<table>
-<tr>
-<td><b>🤖 Robotics</b><br/><sub>Perception, planning, control, automation, simulation</sub></td>
-<td><b>👁️ Computer Vision</b><br/><sub>Machine vision, detection, image pipelines, visual decisions</sub></td>
-<td><b>🧠 AI / ML</b><br/><sub>Models, inference, intelligent agents, local AI</sub></td>
-</tr>
-<tr>
-<td><b>⚙️ Automation</b><br/><sub>Industrial workflows, software automation, control-oriented systems</sub></td>
-<td><b>💻 Software</b><br/><sub>Python, APIs, architecture, tooling, interfaces</sub></td>
-<td><b>🔬 Engineering Research</b><br/><sub>Experiments, benchmarking, failure analysis, reproducibility</sub></td>
-</tr>
-</table>
-
----
-
-## 🚀 SELECTED SYSTEMS
-
-### 🧩 MeeraAI — Local AI System
-
-A direction centered on making local AI practical through application-level orchestration, model handling, hardware-aware inference, user interfaces, and a workflow that hides unnecessary infrastructure complexity.
-
-**Themes:** `LOCAL AI` · `LLM INFERENCE` · `DESKTOP SYSTEMS` · `HARDWARE AWARENESS` · `UX`
-
-### 👁️ Computer Vision & Machine Intelligence
-
-I am interested in the full vision chain rather than treating vision as a single model call:
-
-```text
-CAMERA / DATA
-     ↓
-PREPROCESSING
-     ↓
-PERCEPTION
-     ↓
-FEATURES / OBJECTS
-     ↓
-REASONING
-     ↓
-DECISION
-     ↓
-ACTION / FEEDBACK
-```
-
-### ⚙️ Request Engineering / Reliable Software Systems
-
-My public systems work explores a different side of engineering: preserving intent as data crosses validation, translation, signed transport, and unreliable networks.
-
-The key lesson is deliberately simple:
-
-> **A timeout is an observation, not proof of remote state.**
-
-This thinking informs how I design boundaries, failure handling, testing, and system contracts.
-
----
-
-## 🔬 ENGINEERING LAB NOTEBOOK
-
-I like to leave behind the reasoning, not only the finished artifact.
-
-| Layer | Question |
-|---|---|
-| 🧱 Architecture | Where should responsibilities live? |
-| 🔄 Data flow | How does meaning change as it crosses boundaries? |
-| 🧪 Experiment | What exactly are we testing? |
-| 📈 Measurement | What did we actually measure? |
-| 💥 Failure | What breaks, and why? |
-| ✅ Verification | Which claims are backed by evidence? |
-| 🔁 Iteration | What changes in the next version? |
-
-The goal is to make projects **inspectable, reproducible, and discussable**.
-
----
-
-## 🛰️ CURRENT BUILD DIRECTION
-
-```text
-LOCAL AI                ████████████████████░  exploring
-ROBOTICS                ██████████████████░░░  building
-COMPUTER VISION         █████████████████░░░░  expanding
-AUTOMATION              ████████████████░░░░░  applying
-SYSTEMS ENGINEERING     ███████████████████░░  deepening
-RESEARCH / EXPERIMENTS  ███████████████░░░░░░  documenting
-```
-
-These bars are **directional**, not numerical claims about completion.
-
----
-
-## 🧪 HOW I APPROACH A NEW SYSTEM
-
-```text
-01  DEFINE THE REAL PROBLEM
-        ↓
-02  MODEL THE SYSTEM
-        ↓
-03  EXPOSE THE CONSTRAINTS
-        ↓
-04  BUILD THE SMALLEST TESTABLE LOOP
-        ↓
-05  MEASURE IT
-        ↓
-06  BREAK IT ON PURPOSE
-        ↓
-07  VERIFY THE FAILURE BOUNDARIES
-        ↓
-08  SHIP THE NEXT ITERATION
-```
-
-That is why I care about **tests, traces, benchmarks, decision logs, observability and readable architecture** as much as the final UI.
-
----
-
-## 🧬 EVIDENCE GRAPH
-
-The ideal path through my public work is:
-
-<p align="center"><b>IDEA → ARCHITECTURE → IMPLEMENTATION → EXPERIMENT → MEASUREMENT → VERIFICATION → REPRODUCTION</b></p>
-
-Every future flagship project should make that path clickable.
-
----
-
-## 🛠️ TOOLBOX
-
-<p align="center">
-  <img src="https://skillicons.dev/icons?i=python,cpp,typescript,javascript,react,nextjs,opencv,pytorch,git,github,linux,docker" />
-</p>
-
-<p align="center"><sub>Tooling evolves with the problem. I prefer understanding systems over collecting logos.</sub></p>
-
----
-
-## 📚 LEARN / BUILD / VERIFY
-
-**Learn** from papers, documentation, experiments, and first principles.  
-**Build** something that exposes a real constraint.  
-**Verify** it with tests, benchmarks, traces, or reproducible evidence.  
-**Publish** the decisions so another engineer can understand the path.
-
----
-
-## 🌐 ELSEWHERE
-
-<p align="center">
-  <a href="https://viditshah5656.github.io/">🌐 Portfolio</a>
-  ·
-  <a href="https://www.linkedin.com/">💼 LinkedIn</a>
-  ·
-  <a href="https://orcid.org/0009-0009-0658-6157">🔬 ORCID</a>
-</p>
-
----
-
-<p align="center">
+<div align="center">
   <img src="https://capsule-render.vercel.app/api?type=waving&color=0:0ea5e9,50:8b5cf6,100:ec4899&height=110&section=footer&animation=twinkling" width="100%" />
-</p>
-
-<p align="center"><b>Build things worth inspecting.</b></p>
-
-<sub>Profile design is intentionally evidence-oriented. Dynamic cards and third-party widgets depend on their respective services. Public projects should be treated as the source of truth for technical claims.</sub>
+</div>
