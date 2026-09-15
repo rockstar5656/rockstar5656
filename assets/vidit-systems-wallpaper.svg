@@ -1,0 +1,87 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="520" viewBox="0 0 1600 520" fill="none">
+<defs>
+  <linearGradient id="bg" x1="0" y1="0" x2="1600" y2="520" gradientUnits="userSpaceOnUse">
+    <stop stop-color="#070A12"/>
+    <stop offset="0.48" stop-color="#11162A"/>
+    <stop offset="1" stop-color="#080B14"/>
+  </linearGradient>
+  <radialGradient id="glowA" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(260 150) rotate(27) scale(510 270)">
+    <stop stop-color="#61DDFB" stop-opacity="0.30"/>
+    <stop offset="1" stop-color="#61DDFB" stop-opacity="0"/>
+  </radialGradient>
+  <radialGradient id="glowB" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(1280 140) rotate(160) scale(510 300)">
+    <stop stop-color="#9B7CFF" stop-opacity="0.24"/>
+    <stop offset="1" stop-color="#9B7CFF" stop-opacity="0"/>
+  </radialGradient>
+  <radialGradient id="core" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(800 260) rotate(90) scale(120)">
+    <stop stop-color="#F7FBFF" stop-opacity="0.95"/>
+    <stop offset="0.22" stop-color="#A6DDF8" stop-opacity="0.45"/>
+    <stop offset="0.6" stop-color="#7F74FF" stop-opacity="0.18"/>
+    <stop offset="1" stop-color="#7F74FF" stop-opacity="0"/>
+  </radialGradient>
+  <linearGradient id="trace" x1="0" y1="0" x2="1" y2="0">
+    <stop stop-color="#63E5FF" stop-opacity="0"/>
+    <stop offset="0.48" stop-color="#63E5FF" stop-opacity="0.6"/>
+    <stop offset="1" stop-color="#9F82FF" stop-opacity="0"/>
+  </linearGradient>
+  <filter id="blur30"><feGaussianBlur stdDeviation="30"/></filter>
+  <filter id="blur12"><feGaussianBlur stdDeviation="12"/></filter>
+</defs>
+<rect width="1600" height="520" rx="32" fill="url(#bg)"/>
+<ellipse cx="330" cy="130" rx="500" ry="250" fill="url(#glowA)" filter="url(#blur30)"/>
+<ellipse cx="1290" cy="150" rx="480" ry="260" fill="url(#glowB)" filter="url(#blur30)"/>
+<!-- micro-grid -->
+<g opacity="0.16" stroke="#B7C7E8" stroke-width="1">
+  <path d="M0 64H1600M0 128H1600M0 192H1600M0 256H1600M0 320H1600M0 384H1600M0 448H1600"/>
+  <path d="M64 0V520M128 0V520M192 0V520M256 0V520M320 0V520M384 0V520M448 0V520M512 0V520M576 0V520M640 0V520M704 0V520M768 0V520M832 0V520M896 0V520M960 0V520M1024 0V520M1088 0V520M1152 0V520M1216 0V520M1280 0V520M1344 0V520M1408 0V520M1472 0V520M1536 0V520"/>
+</g>
+<!-- orbital system -->
+<ellipse cx="800" cy="260" rx="340" ry="105" transform="rotate(-13 800 260)" stroke="#7CE7FF" stroke-opacity="0.16" stroke-width="2"/>
+<ellipse cx="800" cy="260" rx="450" ry="135" transform="rotate(19 800 260)" stroke="#A48BFF" stroke-opacity="0.13" stroke-width="2"/>
+<ellipse cx="800" cy="260" rx="560" ry="175" transform="rotate(-9 800 260)" stroke="#8BA0FF" stroke-opacity="0.08" stroke-width="2"/>
+<circle cx="800" cy="260" r="116" fill="url(#core)"/>
+<circle cx="800" cy="260" r="82" fill="#0D1325" fill-opacity="0.82" stroke="#D7E8FF" stroke-opacity="0.16"/>
+<text x="800" y="248" text-anchor="middle" fill="#F8FBFF" font-family="Inter,Arial,sans-serif" font-size="28" font-weight="800">VIDIT SHAH</text>
+<text x="800" y="274" text-anchor="middle" fill="#9EACC5" font-family="Inter,Arial,sans-serif" font-size="12" letter-spacing="3">ROBOTICS · AI · SYSTEMS</text>
+<!-- system nodes -->
+<g font-family="Inter,Arial,sans-serif">
+  <g transform="translate(110 72)">
+    <rect width="245" height="74" rx="18" fill="#0B1020" fill-opacity="0.84" stroke="#7CE7FF" stroke-opacity="0.18"/>
+    <circle cx="22" cy="25" r="6" fill="#70E6FF"/>
+    <text x="38" y="30" fill="#F4F7FF" font-size="14" font-weight="700">PERCEPTION</text>
+    <text x="22" y="54" fill="#93A1BA" font-size="10">Vision · Sensors · Data · Signals</text>
+  </g>
+  <g transform="translate(1245 72)">
+    <rect width="245" height="74" rx="18" fill="#0B1020" fill-opacity="0.84" stroke="#A48BFF" stroke-opacity="0.20"/>
+    <circle cx="22" cy="25" r="6" fill="#AF8CFF"/>
+    <text x="38" y="30" fill="#F4F7FF" font-size="14" font-weight="700">INTELLIGENCE</text>
+    <text x="22" y="54" fill="#93A1BA" font-size="10">AI · ML · LLMs · Local Inference</text>
+  </g>
+  <g transform="translate(125 370)">
+    <rect width="260" height="74" rx="18" fill="#0B1020" fill-opacity="0.84" stroke="#79E8D0" stroke-opacity="0.19"/>
+    <circle cx="22" cy="25" r="6" fill="#79E8D0"/>
+    <text x="38" y="30" fill="#F4F7FF" font-size="14" font-weight="700">PLANNING</text>
+    <text x="22" y="54" fill="#93A1BA" font-size="10">Algorithms · Constraints · Routing</text>
+  </g>
+  <g transform="translate(1215 370)">
+    <rect width="260" height="74" rx="18" fill="#0B1020" fill-opacity="0.84" stroke="#FF9BD8" stroke-opacity="0.18"/>
+    <circle cx="22" cy="25" r="6" fill="#FF9BD8"/>
+    <text x="38" y="30" fill="#F4F7FF" font-size="14" font-weight="700">ACTION</text>
+    <text x="22" y="54" fill="#93A1BA" font-size="10">Automation · APIs · Control · Product</text>
+  </g>
+</g>
+<!-- circuit traces -->
+<g stroke="url(#trace)" stroke-width="2" stroke-linecap="round">
+  <path d="M355 108C475 108 500 155 596 175"/>
+  <path d="M1245 108C1125 108 1100 155 1004 175"/>
+  <path d="M385 406C500 406 535 357 610 337"/>
+  <path d="M1215 406C1100 406 1065 357 990 337"/>
+</g>
+<g fill="#DDF8FF">
+  <circle cx="355" cy="108" r="3"/><circle cx="596" cy="175" r="3"/><circle cx="1245" cy="108" r="3"/><circle cx="1004" cy="175" r="3"/>
+  <circle cx="385" cy="406" r="3"/><circle cx="610" cy="337" r="3"/><circle cx="1215" cy="406" r="3"/><circle cx="990" cy="337" r="3"/>
+</g>
+<!-- edge labels -->
+<text x="42" y="475" fill="#71809A" font-family="ui-monospace,monospace" font-size="10" letter-spacing="2">SYSTEMS ENGINEERING / END-TO-END BUILDING</text>
+<text x="1558" y="475" text-anchor="end" fill="#71809A" font-family="ui-monospace,monospace" font-size="10" letter-spacing="2">LOCAL · PRACTICAL · HUMAN-FOCUSED</text>
+</svg>
