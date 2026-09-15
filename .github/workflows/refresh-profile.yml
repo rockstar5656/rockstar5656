@@ -1,0 +1,34 @@
+name: Refresh public engineering index
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '23 6 * * 1'
+permissions:
+  contents: read
+concurrency:
+  group: profile-refresh
+  cancel-in-progress: false
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Refresh from public API
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: python scripts/update_profile.py
+      - name: Commit updated inventory
+        run: |
+          if git diff --quiet -- README.md data/public-snapshot.json; then
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add README.md data/public-snapshot.json
+          git commit -m "docs: refresh public engineering inventory"
+          git push

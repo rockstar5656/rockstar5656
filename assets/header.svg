@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="340" viewBox="0 0 1200 340" role="img" aria-labelledby="title desc">
+<title id="title">Vidit Shah — engineering notebook</title><desc id="desc">A dark typographic banner for Python systems and automation.</desc>
+<rect width="1200" height="340" rx="18" fill="#101820"/>
+<path d="M48 55H1152M48 285H1152" stroke="#35434c"/>
+<text x="52" y="91" font-family="monospace" font-size="15" fill="#83e6bc" letter-spacing="4">ENGINEERING NOTEBOOK / ROCKSTAR5656</text>
+<text x="48" y="179" font-family="Arial, sans-serif" font-size="76" font-weight="700" fill="#f5f1e7">VIDIT SHAH</text>
+<text x="52" y="224" font-family="Arial, sans-serif" font-size="25" fill="#b9c4ca">Systems. Automation. The decisions behind the code.</text>
+<text x="52" y="313" font-family="monospace" font-size="13" fill="#83e6bc">SOURCE → ARCHITECTURE → DECISIONS → VERIFICATION</text>
+</svg>

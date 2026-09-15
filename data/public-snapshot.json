@@ -1,0 +1,17 @@
+{
+  "owner": "rockstar5656",
+  "fetched_at": "2026-09-15 11:44 UTC",
+  "repositories": [
+    {
+      "name": "binance-futures-trading-bot",
+      "url": "https://github.com/rockstar5656/binance-futures-trading-bot",
+      "description": "Python CLI trading bot for Binance USDT-M Futures Testnet featuring Market, Limit & Stop-Limit orders, structured logging, validation, exception handling, and modular architecture.",
+      "fork": false,
+      "archived": false,
+      "updated_at": "2026-07-17T08:14:19Z"
+    }
+  ],
+  "language_bytes": {
+    "Python": 51352
+  }
+}
